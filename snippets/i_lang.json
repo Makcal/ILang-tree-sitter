@@ -1,4 +1,16 @@
 {
+    "array": {
+        "prefix": "array",
+        "body": "array [$1] $0"
+    },
+    "record": {
+        "prefix": "record",
+        "body": [
+            "record",
+            "\t$1",
+            "end$0"
+        ]
+    },
     "routine": {
         "prefix": "routine",
         "body": [
