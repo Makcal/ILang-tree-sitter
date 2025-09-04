@@ -1,7 +1,11 @@
 ; Keywords
 [
  "var"
+ "type"
  "is"
+ "array"
+ "record"
+ "end"
 ] @keyword
 
 (primitive_type) @type
@@ -45,9 +49,10 @@
 
 ; Operators
 [
-  "and"
   "not"
+  "and"
   "or"
+  "xor"
 ] @keyword.operator
 
 [
