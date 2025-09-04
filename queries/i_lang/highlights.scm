@@ -6,6 +6,7 @@
  "array"
  "record"
  "end"
+ "return"
 ] @keyword
 
 (primitive_type) @type

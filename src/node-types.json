@@ -533,6 +533,22 @@
     }
   },
   {
+    "type": "return_statement",
+    "named": true,
+    "fields": {
+      "argument": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "routine_body",
     "named": true,
     "fields": {
@@ -700,6 +716,10 @@
         },
         {
           "type": "print_statement",
+          "named": true
+        },
+        {
+          "type": "return_statement",
           "named": true
         },
         {
@@ -1044,6 +1064,10 @@
   },
   {
     "type": "record",
+    "named": false
+  },
+  {
+    "type": "return",
     "named": false
   },
   {

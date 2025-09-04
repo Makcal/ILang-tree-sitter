@@ -137,7 +137,8 @@ module.exports = grammar({
       $.while_loop,
       $.for_loop,
       $.if_statement,
-      $.print_statement
+      $.print_statement,
+      $.return_statement
     ),
 
     assignment: $ => prec.left(seq(
@@ -192,6 +193,11 @@ module.exports = grammar({
     print_statement: $ => seq(
       'print',
       commaSep1(field('argument', $.expression))
+    ),
+
+    return_statement: $ => seq(
+      'return',
+      field('argument', $.expression)
     ),
 
     // Expressions
