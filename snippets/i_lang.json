@@ -1,0 +1,49 @@
+{
+    "routine": {
+        "prefix": "routine",
+        "body": [
+            "routine $1($2) is",
+            "\t$3",
+            "end$0"
+        ],
+        "description": "Routine with body"
+    },
+    "routine_fast": {
+        "prefix": "roex",
+        "body": "routine $1($2) => $3",
+        "description": "Routine as expression"
+    },
+    "for_loop": {
+        "prefix": "for",
+        "body": [
+            "for $1 in $2 loop",
+            "\t$3",
+            "end$0"
+        ]
+    },
+    "while_loop": {
+        "prefix": "while",
+        "body": [
+            "while $1 loop",
+            "\t$2",
+            "end$0"
+        ]
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if $1 then",
+            "\t$2",
+            "end$0"
+        ]
+    },
+    "if_else": {
+        "prefix": "ifel",
+        "body": [
+            "if $1 then",
+            "\t$2",
+            "else$3",
+            "end$0"
+        ]
+    }
+}
